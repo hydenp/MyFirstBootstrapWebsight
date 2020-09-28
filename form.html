@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Projects About Me</title>
+
+
+    <!-- link to style sheet -->
+    <link rel="stylesheet" href="assets/styles.css">
+
+    <!-- bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  </head>
+  <body>
+    <!--Navbar -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a href="mypage_bootstrap.html">
+            <img src="assets/navbar/profile_square.jpeg" alt="Profile picture" height="40px" width="60px" style="border-radius: 50%; padding-left: 10px; padding-right: 10px;"/>
+        </a>
+        
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="mypage_bootstrap.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="form.html">Form</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="navbar-right">
+            <a class="navbar-brand" href="https://github.com/hydenp">
+                <img src="assets/navbar/github_icon.png" alt="Profile picture" height="40px" width="40px" style="border-radius: 50%;"/>
+            </a>
+        </div>  
+    </nav>
+
+    <div class="container">
+      <form method="GET" action="mypage_bootstrap.html">
+        <br>
+        <h1>Add A New Interest!</h1>
+        <div class="form-group">
+          <label for="Interest">Interest Name</label>
+          <input type="text" class="form-control" id="Interest" aria-describedby="emailHelp" placeholder="Interest">
+        </div>
+        <div class="form-group">
+          <label for="moreIfno">Tell us some more about this interest!</label>
+          <textarea class="form-control" id="moreIfno" rows="3"></textarea>
+        </div>
+
+        <!-- put Upload and select in one row -->
+        <div class="row">
+            <!-- Upload File -->
+            <div class="form-group col-md-6">
+                <label for="exampleFormControlFile1">Upload an Image</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+            <!-- Select number of Tweets -->
+            <div class="form-group col-md-6">
+                <label for="exampleFormControlSelect1">Select Number of Tweets to Display</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Interest radio buttons -->
+        <p>On a scale of 1-5, how interested in this are you?</p>
+        <div class="form-check form-check-inline" id="interest_level">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <label class="form-check-label" for="inlineCheckbox1">1</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+            <label class="form-check-label" for="inlineCheckbox2">2</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label" for="inlineCheckbox3">3</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label" for="inlineCheckbox3">4</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label" for="inlineCheckbox3">5</label>
+        </div>
+
+        <br> <br>
+
+        <!-- login to complete submission -->
+        <label for="login">Login to finish submitting</label>
+        <div class="row" id="login">
+            <div class="form-group col-md-6">
+                <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="username">
+            </div>
+            <div class="form-group col-md-6">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="password">
+            </div>
+        </div>
+       
+        <!-- submit button -->
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+
+      </form>
+    </div>
+
+  </body>
+</html>

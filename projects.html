@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Projects About Me</title>
+
+
+    <!-- link to style sheet -->
+    <link rel="stylesheet" href="assets/styles.css">
+
+    <!-- bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  </head>
+  <body>
+    <!--Navbar -->
+    <!--Navbar -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a href="mypage_bootstrap.html">
+            <img src="assets/navbar/profile_square.jpeg" alt="Profile picture" height="40px" width="60px" style="border-radius: 50%; padding-left: 10px; padding-right: 10px;"/>
+        </a>
+        
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="mypage_bootstrap.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="form.html">Form</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="navbar-right">
+            <a class="navbar-brand" href="https://github.com/hydenp">
+                <img src="assets/navbar/github_icon.png" alt="Profile picture" height="40px" width="40px" style="border-radius: 50%;"/>
+            </a>
+        </div>  
+    </nav>
+
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+      
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/projects/showShelf_collage.jpg" alt="Shoe Shelf Collage" style="width: 100%;">
+            <div class="carousel-caption">
+                <h3> <strong>Shoe Shelf</strong> </h3>
+                <p>I love to build things with my hands!</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/projects/codingProject_collage.jpg" alt="Coding Project Collage" style="width: 100%;">
+            <div class="carousel-caption">
+                <h3 style="color: black;"> <strong>Pickup Sports App</strong> </h3>
+                <p style="color: black;">Here is a project I'm currently working on for this class!</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/projects/brakejob_collage.jpg" alt="Brake Collage" style="width: 100%;">
+            <div class="carousel-caption">
+                <h3> <strong>Brake Service</strong> </h3>
+                <p>Sometimes I also work on my car!</p>
+              </div>
+          </div>
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      
+    </div>
+  </body>
+</html>
